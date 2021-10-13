@@ -126,7 +126,7 @@ public class ProfileFragment extends Fragment {
 
 //        printKeyHash();
         loginButton = (LoginButton) view.findViewById(R.id.login_button);
-        loginButton.setReadPermissions("email", "public_profile", "user_friends");
+        loginButton.setReadPermissions(Arrays.asList("email", "public_profile"));
         // If using in a fragment
         loginButton.setFragment(this);
 
@@ -158,9 +158,9 @@ public class ProfileFragment extends Fragment {
                 try {
                     String pic = jsonObject.getJSONObject("picture").getJSONObject("data").getString("url");
                     String UserName = jsonObject.getString("name");
-                    String Gender = jsonObject.getString("gender");
-                    String Hometown = jsonObject.getJSONObject("hometown").getString("name");
-                    String Email = jsonObject.getString("email");
+//                    String Gender = jsonObject.getString("gender");
+//                    String Hometown = jsonObject.getJSONObject("hometown").getString("name");
+//                    String Email = jsonObject.getString("email");
                     String Id = jsonObject.getString("id");
                     String token = AccessToken.getCurrentAccessToken().getToken();
 //                            Log.d("TOKEN NE: ", token);
@@ -168,15 +168,16 @@ public class ProfileFragment extends Fragment {
 
 
                     name.setText(UserName);
-                    gender.setText(Gender);
-                    email.setText(Email);
-                    hometown.setText(Hometown);
+                    gender.setText("Male");
+                    email.setText("example@gmail.com");
+                    hometown.setText("Hồ Chí Minh");
 
                     Glide.with(getApplicationContext())
                             .load("https://graph.facebook.com/" + Id+ "/picture?type=large")
                             .into(circleImageView);
                 } catch (JSONException e) {
                     e.printStackTrace();
+
                 }
 
             }

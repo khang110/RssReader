@@ -28,6 +28,8 @@ import com.khang.rssurl.Model.User;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Arrays;
+
 public class LoginActivity extends AppCompatActivity {
     MaterialButton materialButton;
     private CallbackManager callbackManager;
@@ -44,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
         loginButton = (LoginButton) findViewById(R.id.login_button);
         loginButton.registerCallback(callbackManager, loginResultFacebookCallback());
-        loginButton.setReadPermissions("email", "public_profile", "user_friends");
+        loginButton.setReadPermissions(Arrays.asList("email", "public_profile"));
         materialButton = findViewById(R.id.loginCustomButton);
 
         // Callback registration
@@ -80,9 +82,9 @@ public class LoginActivity extends AppCompatActivity {
                         try {
                             String pic = jsonObject.getJSONObject("picture").getJSONObject("data").getString("url");
                             String name = jsonObject.getString("name");
-                            String gender = jsonObject.getString("gender");
-                            String hometown = jsonObject.getJSONObject("hometown").getString("name");
-                            String email = jsonObject.getString("email");
+//                            String gender = jsonObject.getString("gender");
+//                            String hometown = jsonObject.getJSONObject("hometown").getString("name");
+//                            String email = jsonObject.getString("email");
                             String id = jsonObject.getString("id");
                             String token = loginResult.getAccessToken().getToken();
 
@@ -90,21 +92,23 @@ public class LoginActivity extends AppCompatActivity {
                             editor.putString("id", id);
                             editor.commit();
 
-                            User user = new User(id, name, email, gender, hometown, pic, token);
+                            User user = new User(id, name, "email", "Male", "Hồ Chí Minh", pic, token);
                             daoNews.addUser(user).addOnSuccessListener(suc-> {
                                 Intent i = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(i);
                             }).addOnFailureListener(er->{
+                                Log.d("ERR: ", er.toString());
                                 Toast.makeText(LoginActivity.this, er.getMessage(), Toast.LENGTH_SHORT).show();
                             });
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Log.d("LỖI: ", e.toString());
                         }
 
                     }
                 });
                 Bundle bundle = new Bundle();
-                bundle.putString("fields", " id, name, picture.width(150).height(150), email, gender, hometown");
+                bundle.putString("fields", " id, name, gender, picture.width(150).height(150), email, hometown");
                 graphRequest.setParameters(bundle);
                 graphRequest.executeAsync();
             }
