@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RssUrl</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">874076106804190</string>
+    <string name="fb_login_protocol_scheme">fb874076106804190</string>
+    <string name="facebook_client_token">f4b9a58e72f1bd538244dce53e25e743</string>
+    <string name="login_with_facebook">Log in with facebook</string>
+    <string name="logout_facebook">Log out</string>
+    <string name="login">Log in</string>
+    <string name="result">result</string>
+</resources>
