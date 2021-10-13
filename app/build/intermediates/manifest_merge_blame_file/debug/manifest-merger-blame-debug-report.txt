@@ -1,0 +1,228 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.khang.rssurl"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:6:5-81
+12-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:6:22-78
+13
+14    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:25:5-79
+16-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:25:22-76
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.android.installreferrer:installreferrer:1.0] C:\Users\anhkh\.gradle\caches\transforms-3\e75885f1b48731cfc14b4bb0f5f1aa8a\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+17-->[com.android.installreferrer:installreferrer:1.0] C:\Users\anhkh\.gradle\caches\transforms-3\e75885f1b48731cfc14b4bb0f5f1aa8a\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+18
+19    <application
+19-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:8:5-59:19
+20        android:allowBackup="true"
+20-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:9:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.5.0] C:\Users\anhkh\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:10:9-43
+24        android:label="@string/app_name"
+24-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:11:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:12:9-54
+26        android:supportsRtl="true"
+26-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:13:9-35
+27        android:theme="@style/Theme.RssUrl"
+27-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:14:9-44
+28        android:usesCleartextTraffic="true" >
+28-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:15:9-44
+29        <activity
+29-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:16:9-24:20
+30            android:name="com.khang.rssurl.LoginActivity"
+30-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:17:13-42
+31            android:exported="true" >
+31-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:18:13-36
+32            <intent-filter>
+32-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:19:13-23:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:20:17-69
+33-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:20:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:22:17-77
+35-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:22:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <uses-library
+39-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:26:9-28:40
+40            android:name="org.apache.http.legacy"
+40-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:27:13-50
+41            android:required="false" />
+41-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:28:13-37
+42
+43        <activity
+43-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:30:9-34:20
+44            android:name="com.khang.rssurl.MainActivity"
+44-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:31:13-41
+45            android:exported="true" >
+45-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:32:13-36
+46        </activity>
+47
+48        <meta-data
+48-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:36:9-38:61
+49            android:name="com.facebook.sdk.ClientToken"
+49-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:37:13-56
+50            android:value="@string/facebook_client_token" />
+50-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:38:13-58
+51        <meta-data
+51-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:39:9-41:55
+52            android:name="com.facebook.sdk.ApplicationId"
+52-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:40:13-58
+53            android:value="@string/facebook_app_id" />
+53-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:41:13-52
+54
+55        <activity
+55-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:43:9-46:48
+56            android:name="com.facebook.FacebookActivity"
+56-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:44:13-57
+57            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+57-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:45:13-96
+58            android:label="@string/app_name"
+58-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:46:13-45
+59            android:theme="@style/com_facebook_activity_theme" />
+59-->[com.facebook.android:facebook-common:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\6b58af46bef8587191292a0e3058b229\transformed\jetified-facebook-common-12.0.0\AndroidManifest.xml:33:13-63
+60        <activity
+60-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:47:9-58:20
+61            android:name="com.facebook.CustomTabActivity"
+61-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:48:13-58
+62            android:exported="true" >
+62-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:49:13-36
+63            <intent-filter>
+63-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:50:13-57:29
+64                <action android:name="android.intent.action.VIEW" />
+64-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:51:17-69
+64-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:51:25-66
+65
+66                <category android:name="android.intent.category.DEFAULT" />
+66-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:53:17-76
+66-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:53:27-73
+67                <category android:name="android.intent.category.BROWSABLE" />
+67-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:54:17-78
+67-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:54:27-75
+68
+69                <data android:scheme="@string/fb_login_protocol_scheme" />
+69-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:56:17-75
+69-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:56:23-72
+70            </intent-filter>
+71            <intent-filter>
+71-->[com.facebook.android:facebook-common:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\6b58af46bef8587191292a0e3058b229\transformed\jetified-facebook-common-12.0.0\AndroidManifest.xml:39:13-48:29
+72                <action android:name="android.intent.action.VIEW" />
+72-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:51:17-69
+72-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:51:25-66
+73
+74                <category android:name="android.intent.category.DEFAULT" />
+74-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:53:17-76
+74-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:53:27-73
+75                <category android:name="android.intent.category.BROWSABLE" />
+75-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:54:17-78
+75-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:54:27-75
+76
+77                <data
+77-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:56:17-75
+78                    android:host="cct.com.khang.rssurl"
+79                    android:scheme="fbconnect" />
+79-->E:\hk7\didong\BTTH\RssUrl\app\src\main\AndroidManifest.xml:56:23-72
+80            </intent-filter>
+81        </activity>
+82        <activity android:name="com.facebook.CustomTabMainActivity" />
+82-->[com.facebook.android:facebook-common:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\6b58af46bef8587191292a0e3058b229\transformed\jetified-facebook-common-12.0.0\AndroidManifest.xml:34:9-71
+82-->[com.facebook.android:facebook-common:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\6b58af46bef8587191292a0e3058b229\transformed\jetified-facebook-common-12.0.0\AndroidManifest.xml:34:19-68
+83
+84        <service
+84-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:29:9-35:19
+85            android:name="com.google.firebase.components.ComponentDiscoveryService"
+85-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:30:13-84
+86            android:directBootAware="true"
+86-->[com.google.firebase:firebase-common:20.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+87            android:exported="false" >
+87-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:31:13-37
+88            <meta-data
+88-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:32:13-34:85
+89                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+89-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:33:17-109
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-database:20.0.2] C:\Users\anhkh\.gradle\caches\transforms-3\84c77abd0e0caaccdb3b7a0007d2b0cd\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:34:17-82
+91        </service>
+92
+93        <provider
+93-->[com.google.firebase:firebase-common:20.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:20.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+95            android:authorities="com.khang.rssurl.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:20.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:20.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+97            android:exported="false"
+97-->[com.google.firebase:firebase-common:20.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+98            android:initOrder="100" />
+98-->[com.google.firebase:firebase-common:20.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+99
+100        <activity
+100-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anhkh\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+101-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anhkh\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+102            android:exported="false"
+102-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anhkh\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+103-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\anhkh\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+104
+105        <meta-data
+105-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+106            android:name="com.google.android.gms.version"
+106-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+107            android:value="@integer/google_play_services_version" />
+107-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+108        <!--
+109         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+110         with the application context. This config is merged in with the host app's manifest,
+111         but there can only be one provider with the same authority activated at any given
+112         point; so if the end user has two or more different apps that use Facebook SDK, only the
+113         first one will be able to use the provider. To work around this problem, we use the
+114         following placeholder in the authority to identify each host application as if it was
+115         a completely different provider.
+116        -->
+117        <provider
+117-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:39:9-42:40
+118            android:name="com.facebook.internal.FacebookInitProvider"
+118-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:40:13-70
+119            android:authorities="com.khang.rssurl.FacebookInitProvider"
+119-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:41:13-72
+120            android:exported="false" />
+120-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:42:13-37
+121
+122        <receiver
+122-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:44:9-50:20
+123            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+123-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:45:13-86
+124            android:exported="false" >
+124-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:46:13-37
+125            <intent-filter>
+125-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:47:13-49:29
+126                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+126-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:48:17-95
+126-->[com.facebook.android:facebook-core:12.0.0] C:\Users\anhkh\.gradle\caches\transforms-3\537dfa6c9cf9e4abf703829f1586859d\transformed\jetified-facebook-core-12.0.0\AndroidManifest.xml:48:25-92
+127            </intent-filter>
+128        </receiver>
+129    </application>
+130
+131</manifest>
