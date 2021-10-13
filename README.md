@@ -22,6 +22,9 @@ First, clone the repo:
 ### Android Studio
 - Select Run -> Run 'app' (or Debug 'app') from the menu bar
 - Select the device you wish to run the app on and click 'OK'
+##### OR
+- Install apk file 
+`app/build/outputs/apk/debug/app-debug.apk`
 
 ### Using the Sample App
 - Log in with your facebook account
